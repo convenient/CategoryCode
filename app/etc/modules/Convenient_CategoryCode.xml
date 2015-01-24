@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Convenient_CategoryCode>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Convenient_CollectionNoDb/>
+
+            </depends>
+        </Convenient_CategoryCode>
+    </modules>
+</config>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Convenient_CategoryCode>
+            <version>0.1.0</version>
+        </Convenient_CategoryCode>
+    </modules>
+    <global>
+        <models>
+            <convenient_categorycode>
+                <class>Convenient_CategoryCode_Model</class>
+                <resourceModel>convenient_categorycode_resource</resourceModel>
+            </convenient_categorycode>
+            <convenient_categorycode_resource>
+                <class>Convenient_CategoryCode_Model_Resource</class>
+            </convenient_categorycode_resource>
+        </models>
+        <blocks>
+            <convenient_categorycode>
+                <class>Convenient_CategoryCode_Block</class>
+            </convenient_categorycode>
+        </blocks>
+        <helpers>
+            <convenient_categorycode>
+                <class>Convenient_CategoryCode_Helper</class>
+            </convenient_categorycode>
+        </helpers>
+        <resources>
+            <convenient_categorycode_setup>
+                <setup>
+                    <module>Convenient_CategoryCode</module>
+                </setup>
+            </convenient_categorycode_setup>
+        </resources>
+    </global>
+</config>
