@@ -1,6 +1,6 @@
 {
     "name":"convenient/category-code",
-    "description":"Adds a unique identifier to Mage_Catalog_Model_Category.",
+    "description":"Adds a much needed unique identifier to Mage_Catalog_Model_Category.",
     "type": "magento-module",
     "license": "OSL-3.0",
     "suggest":{
