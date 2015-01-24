@@ -5,8 +5,7 @@
             <active>true</active>
             <codePool>community</codePool>
             <depends>
-                <Convenient_CollectionNoDb/>
-
+                <Mage_Catalog/>
             </depends>
         </Convenient_CategoryCode>
     </modules>

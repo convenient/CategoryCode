@@ -29,6 +29,7 @@
             <convenient_categorycode_setup>
                 <setup>
                     <module>Convenient_CategoryCode</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
                 </setup>
             </convenient_categorycode_setup>
         </resources>
