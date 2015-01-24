@@ -21,3 +21,25 @@ $categories = Mage::getResourceModel('catalog/category_collection');
 $categories->addAttributeToSelect(array('code'));
 
 ```
+
+Add it to your composer
+
+```
+{
+    "require": {
+        "magento-hackathon/magento-composer-installer": "~2.0",
+        "convenient/category-code":"~0.1"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.firegento.com"
+        }
+    ],
+    "extra": {
+        "magento-root-dir":"./",
+        "magento-deploystrategy":"copy"
+    }
+}
+
+```
