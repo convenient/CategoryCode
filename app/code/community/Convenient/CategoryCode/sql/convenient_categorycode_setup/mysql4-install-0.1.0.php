@@ -19,6 +19,7 @@ $installer->addAttribute(
         'input' => 'text',
         'global' => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_GLOBAL,
         'visible' => true,
+        'backend' => 'convenient_categorycode/attribute_backend_code',
         'unique' => true,
         'required' => true,
         'user_defined' => true,
