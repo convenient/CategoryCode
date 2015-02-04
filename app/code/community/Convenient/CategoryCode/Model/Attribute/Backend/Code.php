@@ -11,15 +11,15 @@ class Convenient_CategoryCode_Model_Attribute_Backend_Code extends Mage_Eav_Mode
     {
         $attributeName = $this->getAttribute()->getName();
 
-        $urlKey = $object->getData($attributeName);
-        if ($urlKey === false) {
+        $code = $object->getData($attributeName);
+        if ($code === false) {
             return $this;
         }
-        if ($urlKey=='') {
-            $urlKey = $object->getName();
+        if ($code=='') {
+            $code = $object->getData('name') . '-' . $object->getData('path');
         }
 
-        $object->setData($attributeName, $object->formatUrlKey($urlKey));
+        $object->setData($attributeName, $object->formatUrlKey($code));
 
         return $this;
     }
