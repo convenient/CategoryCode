@@ -3,6 +3,13 @@
     "description":"Adds a much needed unique identifier to Mage_Catalog_Model_Category.",
     "type": "magento-module",
     "license": "OSL-3.0",
+    "homepage": "https://github.com/convenient/CategoryCode",
+    "authors": [
+        {
+            "name": "Luke Rodgers",
+            "email": "lukerodgers90@gmail.com"
+        }
+    ],
     "suggest":{
         "magento-hackathon/magento-composer-installer": "*"
     },
