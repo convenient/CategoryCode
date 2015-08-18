@@ -3,9 +3,9 @@
 // Change 'code' as not required
 
 $entityCode = Mage_Catalog_Model_Category::ENTITY;
-$installer->updateAttribute(
+$this->updateAttribute(
     $entityCode,
     'code',
-    'required',
+    'is_required',
     false
 );
