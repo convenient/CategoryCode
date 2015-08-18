@@ -1,7 +1,7 @@
 <?php
-/* @var $installer Mage_Catalog_Model_Resource_Setup */
-$installer = $this;
-$installer->startSetup();
+
+// Change 'code' as not required
+
 $entityCode = Mage_Catalog_Model_Category::ENTITY;
 $installer->updateAttribute(
     $entityCode,
@@ -9,5 +9,3 @@ $installer->updateAttribute(
     'required',
     false
 );
-
-$installer->endSetup();
