@@ -19,10 +19,11 @@ class Convenient_CategoryCode_Model_Attribute_Backend_Code extends Mage_Eav_Mode
             $code = array();
             $parents = $object->getParentCategories();
             foreach ($parents as $parent) {
-                if ($parent->getLevel() > 1) {
+                if ($parent->getLevel() > 1 && $parent->getId() != $object->getId()) {
                     $code[] = $parent->getName();
                 }
             }
+            $code[] = $object->getName();
             $code = implode('-', $code);
         }
 
