@@ -16,19 +16,31 @@ class Convenient_CategoryCode_Model_Attribute_Backend_Code extends Mage_Eav_Mode
             return $this;
         }
         if ($code == '') {
-            $code = array();
-            $parents = $object->getParentCategories();
-            foreach ($parents as $parent) {
-                if ($parent->getLevel() > 1 && $parent->getId() != $object->getId()) {
-                    $code[] = $parent->getName();
-                }
-            }
-            $code[] = $object->getName();
-            $code = implode('-', $code);
+            $code = $this->prepareCategoryCode($object);
         }
 
         $object->setData($attributeName, $object->formatUrlKey($code));
 
         return $this;
+    }
+
+    /**
+     * @param $object
+     * @return array|string
+     * @author Luke Rodgers <lukerodgers90@gmail.com>
+     * @author Rafal Szafarkiewicz <rs@amp.co>
+     */
+    public function prepareCategoryCode($object)
+    {
+        $code = array();
+        $parents = $object->getParentCategories();
+        foreach ($parents as $parent) {
+            if ($parent->getLevel() > 1 && $parent->getId() != $object->getId()) {
+                $code[] = $parent->getName();
+            }
+        }
+        $code[] = $object->getName();
+        $code = implode('-', $code);
+        return $code;
     }
 }

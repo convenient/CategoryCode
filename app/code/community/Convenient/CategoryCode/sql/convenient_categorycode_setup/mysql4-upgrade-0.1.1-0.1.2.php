@@ -1,9 +1,4 @@
 <?php
-
-// Generate and set code for existing categories
-
-$categories = Mage::getModel('catalog/category')->getCollection()->addAttributeToSelect('name');
-
-foreach ($categories as $category) {
-    $category->save();
-}
+/**
+ * The previous content was removed due to the optimisation issue
+ */
